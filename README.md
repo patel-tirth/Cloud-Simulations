@@ -1,5 +1,31 @@
 # Homework 1
+### Tirth Patel
 ### Create cloud simulators in Scala for evaluating executions of applications in cloud datacenters with different characteristics and deployment models.
+
+
+### How to run this program
+    sbt clean compile test
+    sbt clean compile run
+On running the program, options will be displayed as to which simulation to run. Select 2,3 or 4.
+
+### Simulations and Results
+**Simulation 1:**  TimeShared VmSchedular as well as best fit Vm Allocation Policy.
+**Analysis** Changing the vm allocation policy did not result in price change.
+
+**Simulation2:**  This is a simulation with a mix of three or more datacenters (SaaS, PaaS, IaaS)
+ In this simulation, a broker will decide which data center to connect to based on the config provided by the client
+ for example, in Iaas, the client provides all the configuration of the Vms as per their choice
+ In PaaS, the client provides the number of Vms.
+
+ **Analyis**  When simulating this, only 1 datacenter was utilized. That is, loss of resources.
+
+**Simulation 3** SpaceShared VmScheduler as well as First Fit VM allocation policy, with network datacenter
+ 
+**Analysis** Increased cost of running cloudlets compared to simple datacenter.
+
+**Tests** Various tests are ran in BasicCloudSimPlusExampleTestSuite testing proper vms and cloudlets creation
+as well as proper datacenter such as IaaS, PaaS or SaaS.
+
 ### Grade: 8%
 #### This Git repo contains the description of the first homework and an example implementation of a baseline cloud simulation in Scala. This repo can be cloned using the command git clone git@github.com:0x1DOCD00D/CloudOrgSimulator.git. If interested to learn the implementation details, students can clone CloudSimPlus or ingest it directly into IntelliJ from its [website](https://cloudsimplus.org/) or the [Github repo](https://github.com/manoelcampos/cloudsim-plus), however, it is not required for this homework.
 
