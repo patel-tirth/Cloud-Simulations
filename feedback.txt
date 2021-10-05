@@ -1,0 +1,33 @@
+Student: Tirth Patel
+Grader: Vineet Patel
+
+Homework 1
+
+The maximum grade for this homework is 8%. Points are subtracted from this maximum grade: for example, saying
+that 2% is lost if some requirement is not completed means that the resulting grade will be 8%-2% => 6%;
+if the core homework functionality does not work or it is not implemented as specified in your documentation,
+ your grade will be zero;
+
+Grading Criteria:
+ - only some basic cloud simulation examples from the cloudsim repo are given and nothing else is done:
+    * non-example simulations, though somewhat simple: -0.2%
+ - having less than five unit and/or integration scalatests:
+    * 5+ unit tests: -0%
+ - missing comments and explanations from the simulation program:
+    * comments present: -0%
+ - logging is not used in the simulation programs:
+    * logging used: -0%
+ - hardcoding the input values in the source code instead of using the suggested configuration libraries:
+    * config: -0%
+ - for each used var for heap-based shared variables or mutable collections:
+    * no vars used: -0%
+ - for each used while or for or other loops with induction variables to iterate over a collection:
+    * no loops used: -0%
+ - no instructions in README.md on how to install and run your simulator:
+    * instructions present: -0%
+ - the program crashes without completing the core functionality:
+    * program runs: -0% 
+ - the documentation exists but it is insufficient to understand your cloud simulation design and models and how you assembled and deployed all components of the cloud:
+    * documentation exists: -0%
+Total grade: 7.8%
+
